@@ -1,0 +1,4 @@
+/* default float side for this theme */
+#contentContainer #sidebar {
+	float: right;
+}

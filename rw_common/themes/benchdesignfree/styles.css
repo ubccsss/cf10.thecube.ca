@@ -1,0 +1,617 @@
+/*<group=General Styles>*/
+
+body {
+	background: #444242;
+	text-align: center;
+	font: 0.8em/1.6em 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+	margin: 0 50px 50px;
+	color: #404040;
+}
+
+p {
+}
+
+b, strong {
+
+}
+
+a:link, a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+}
+
+img {
+	border-style: none;
+
+}
+
+.image-left {
+
+}
+
+.image-right {
+
+}
+	
+/*</group>*/
+
+/*<group=Layout>*/
+
+#container {
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	background: url(images/sidebar_left_bg.png) repeat-y left top #ffffff;
+}
+
+.clearer {
+	clear: both;
+}
+
+#pageHeader {
+	margin-bottom: 20px;
+	padding-top: 70px;
+	border-bottom: 1px solid #cccccc;
+	height: 80px;
+	margin-right: 10px;
+	margin-left: 10px;
+	position: relative;
+}
+
+#pageHeader #peel {
+	background: url(images/top_left_grad.png) no-repeat left top;
+	position: absolute;
+	top: 1px;
+	left: -10px;
+	z-index: 100;
+	height: 53px;
+	width: 53px;
+}
+
+#pageHeader img {
+
+}
+
+#pageHeader h1 {
+	margin: 0;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 1.8em;
+	display: inline;
+}
+
+#pageHeader h2 {
+	color: #333333;
+	font-weight: normal;
+	font-size: 1em;
+	margin-top: 5px;
+}
+
+#contentContainer {
+	margin-left: 220px;
+	position: relative;
+
+}
+
+#contentContainer #content {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 180px;
+	padding-bottom: 10px;
+}
+
+#contentContainer #sidebar {
+	float: right;
+	width: 180px;
+	color: #808080;
+	font-size: 0.95em;
+}
+
+#sidebar p {
+	margin: 0 0 10px;
+	padding: 0 10px;
+}
+
+#contentContainer .sideHeader {
+
+}
+
+#sidebarContainer {
+	float: left;
+	width: 220px;
+	position: relative;
+	display: block;
+}
+
+#sidebarContainer #logo {
+	width: 220px;
+	height: 150px;
+	background: url(images/logo.png) no-repeat;
+	border-bottom: 1px solid #484848;
+	display: block;
+}
+
+#sidebarContainer p {
+	color: #333333;
+	margin: 20px;
+	padding: 5px;
+}
+
+#sidebarContainer a:link, #sidebarContainer a:visited {
+	text-decoration: none;
+	color: #afafaf;
+	background: transparent;
+}
+
+#sidebarContainer a:hover, #sidebarContainer a:active {
+	background: #333333;
+}
+
+#footer {
+	color: #808080;
+}
+
+#footer p {
+}
+
+#footer a:link, #footer a:visited {
+	background: transparent;
+	color: #cccccc;
+}
+
+#footer a:hover, #footer a:active {
+	color: #191919;
+}
+	
+/*</group>*/
+
+/*<group=Bread-crumb>*/
+
+#breadcrumbcontainer {
+	display: block;
+	color: #ffffff;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#breadcrumbcontainer ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+#breadcrumbcontainer li {
+	display: inline;
+}
+
+#breadcrumbcontainer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#breadcrumbcontainer a:hover {
+}
+	
+/*</group>*/
+
+/*<group=Toolbar>*/
+
+/* Toolbar Styles */
+
+#navcontainer {
+}
+
+#navcontainer #current {
+	background: #333333;
+}
+
+#navcontainer #current:hover {
+}
+
+#navcontainer a:link.currentAncestor {
+	background: #333333;
+}
+
+/* Parent - Level 0 */
+
+#navcontainer ul{
+	list-style: none;
+	padding: 0;
+	margin: 20px;
+	border-top: 1px solid #484848;
+}
+
+#navcontainer li {
+}
+
+#navcontainer a {
+	text-decoration: none;
+	color: #afafaf;
+	border-bottom: 1px solid #484848;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	height: 20px;
+}
+
+#navcontainer a:hover {
+	background: #333333;
+}
+
+#navcontainer a:active {
+}
+
+/* Child - Level 1 */
+
+#navcontainer ul ul {
+	margin: 0;
+	padding: 0;
+	border-top-style: none;
+	border-bottom: 1px solid #484848;
+}
+
+#navcontainer ul ul li {
+}
+
+#navcontainer ul ul a:link {
+	padding-left: 15px;
+	font-size: 0.9em;
+	color: #4c4c4c;
+	border-style: none;
+}
+
+#navcontainer ul ul a:hover{
+	background: transparent;
+	color: #afafaf;
+}
+
+#navcontainer ul ul #current{
+	background: transparent;
+	color: #afafaf;
+}
+
+#navcontainer ul ul a:link.currentAncestor {
+	background: transparent;
+	color: #afafaf;
+}
+
+/* Child - Level 2 */
+
+#navcontainer ul ul ul {
+	border: none;
+}
+
+#navcontainer ul ul ul li { 
+}
+
+#navcontainer ul ul ul a:link {
+	padding-left: 35px;
+}
+
+#navcontainer ul ul ul a:hover{
+
+}
+
+/* Child Level 3 */
+
+#navcontainer ul ul ul ul {
+	display: none;
+}
+
+/*</group>*/
+
+/*<group=Global Classes>*/
+
+blockquote, .standout {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+.imageStyle {
+
+}
+	
+/*</group>*/
+
+/*<group=Blog>*/
+
+/*<group=Archive Page>*/
+
+.blog-archive-background {
+	text-align: left;
+
+}
+
+.blog-archive-headings-wrapper {
+	background: #ffffff;
+	padding: 10px;
+}
+
+.blog-archive-entries-wrapper {
+	background: #ffffff;
+	padding: 10px;
+}
+
+.blog-archive-entries-wrapper .blog-entry {
+}
+
+.blog-archive-month {
+	margin-bottom: 15px;
+	
+	color: #4c4c4c;
+	font-weight: normal;
+	font-size: 1.8em;
+	display: inline;
+}
+
+.blog-archive-link {
+	font-size: 1em;
+	margin-top: 5px;
+}
+
+.blog-archive-link a:link, .blog-archive-link a:visited {
+}
+
+	
+/*</group>*/
+
+.blog-entry {
+}
+
+.blog-entry-title {
+	color: #404040;
+	font-size: 1.8em;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.blog-entry-date {
+	font-size: 0.9em;
+	margin-bottom: 10px;
+
+}
+
+.blog-entry-body {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+.blog-entry-comments {
+	margin-top: 10px;
+}
+
+.blog-entry-category {
+}
+
+.blog-category-link-enabled {
+}
+
+.blog-category-link-disabled {
+}
+
+/*</group>*/
+
+/*<group=File Sharing>*/
+
+.filesharing-description {
+	margin-bottom: 10px;
+}
+
+.filesharing-item {
+	margin-bottom: 10px;
+}
+
+.filesharing-item-title a:link {
+}
+
+.filesharing-item-title a:hover {
+}
+
+.filesharing-item-title a:visited {
+
+}
+
+.filesharing-item-description {
+}
+
+/*</group>*/
+
+/*<group=Photo Album>*/
+
+/*<group=Index Page (Thumbnail view)>*/
+
+.album-title {
+	color: #404040;
+	font-size: 1.8em;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.album-description {
+	margin-bottom: 10px;
+}
+
+.thumbnail-table {
+	width: 99%;
+	position: relative;
+
+}
+
+.thumbnail-frame {
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+
+.thumbnail-frame:hover {
+}
+
+.thumbnail-frame a:link {
+	background-color: transparent;
+}
+
+.thumbnail-frame a:hover {
+}
+
+.thumbnail-frame img {
+}
+
+.thumbnail-caption {
+	
+	color: #4c4c4c;
+}
+	
+/*</group>*/
+
+/*<group=Single Page (Photo view)>*/
+
+.photo-background {
+	margin: 0;
+
+}
+
+.photo-navigation {
+	
+	color: #4c4c4c;
+	margin-bottom: 20px;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+
+}
+
+.photo-links {
+	margin: 0;
+}
+
+.photo-navigation a:link, .photo-navigation a:visited {
+
+}
+
+.photo-navigation a:hover {
+
+}
+
+.photo-frame{
+	padding: 5px;
+	background: #ffffff;
+}
+
+.photo-title {
+	margin: 0;
+	font-size: 1.8em;
+	color: #ffffff;
+}
+
+.photo-caption {
+	font-size: 1em;
+	margin: 0 0 10px;
+	color: #ffffff;
+}
+
+/*</group>*/
+	
+/*</group>*/
+
+/*<group=Quicktime Page>*/
+
+.movie-description {
+	text-align: center;
+}
+	
+/*</group>*/
+
+/*<group=Quicktime Album>*/
+
+/*<group=Index Page (Movie Thumbnail view)>*/
+
+.movie-page-title {
+	color: #404040;
+	font-size: 1.8em;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.movie-page-description {
+	margin-bottom: 10px;
+}
+
+.movie-thumbnail-frame {
+	float: left;
+	width: 132px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #cccccc;
+	padding: 1px;
+}
+
+.movie-thumbnail-frame:hover {
+}
+
+
+.movie-thumbnail-caption {
+	margin-top: 1px;
+	
+	color: #4c4c4c;
+}
+	
+/*</group>*/
+
+/*<group=Single Page (Movie View)>*/
+
+.movie-background {
+	background: #222222;
+	margin: 10px;
+}
+
+.movie-title {
+	color: #ffffff;
+	font-size: 1.8em;
+}
+
+.movie-frame {
+
+}
+	
+/*</group>*/
+
+
+/*</group>*/
+
+/*<group=Contact Form>*/
+.message-text { 
+} 
+
+.required-text {
+} 
+
+.form-input-field {
+	background: #e6e6e6;
+	color: #4c4c4c;
+}
+
+.form-input-button { 
+} 
+/*</group>*/
+
+

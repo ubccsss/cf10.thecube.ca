@@ -1,0 +1,7 @@
+#contentContainer #content {
+	margin-right: 0px;
+}
+
+#contentContainer #sidebar {
+	display: none;
+}
